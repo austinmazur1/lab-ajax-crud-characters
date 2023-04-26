@@ -20,6 +20,10 @@
       "occupation": "Lives under the sea",
       "weapon": "Crabby Patty",
       "cartoon": true
+    },
+    {
+      "name": "Ronny",
+      "id": "4"
     }
   ]
 }
