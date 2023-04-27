@@ -8,12 +8,15 @@ class APIHandler {
     });
   }
 
-  getFullList = () => {
-    return this.api.get("/characters");
+  getFullList = async () => {
+    // const response = await this.api.get('"/characters"')
+     const results = await this.api.get("/characters");
+     return results;
   };
 
-   getOneRegister = (characterId) => {
-    return this.api.get(`/characters/${characterId}`);
+   getOneRegister = async (characterId) => {
+    const results = await this.api.get(`/characters/${characterId}`);
+    return results
   };
 
   createOneRegister(characterInfo) {
